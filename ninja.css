@@ -56,6 +56,7 @@ article button {
     font-size: 11px;
     border-radius: 5px;
     height: 30px;
+    transition: 0.5s;
 }
 article button:hover {
     width: 60%;
@@ -104,6 +105,7 @@ aside button {
     border-radius: 5px;
     height: 4rem;
     margin: 1rem;
+    transition: 0.5s;
 }
 aside button:hover {
     width: 60%;
