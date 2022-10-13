@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+body {
+    background-color: black;
+    margin: auto;
+    width: 100vw;
+}
+header {
+    display: flex;
+
+
+}
+blockquote {
+    justify-content: center;
+    margin: auto;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+blockquote img {
+    width: 100%;
+    height: 500px;
+}
+.fa-bars {
+    font-size: 30px;
+    color: black;
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    
+}
+
+section {
+   
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 400px 400px 400px;
+        gap: 4rem 1rem;
+        max-width: 800px;
+        margin: 0 auto;
+       
+    }
+article {
+    display: flex;
+    flex-direction: column;
+}
+article img {
+    height: 250px;
+    width: 100%;
+}
+article h1 {
+    color: white;
+    margin-bottom: auto;
+}
+article p {
+    color: rgba(255, 255, 255, 0.83);
+}
+article button {
+    background-color: rgb(226, 51, 51);
+    color: white;
+    width: 7rem;
+    margin-top: auto;
+    font-size: 11px;
+    border-radius: 5px;
+    height: 30px;
+    transition: 0.5s;
+}
+article button:hover {
+    width: 60%;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+
+figure {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 600px;
+    margin: auto;
+    max-width: 800px;
+    gap: 1rem;
+}
+aside {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    
+}
+aside img {
+    width: 100%;
+    height: 70%;
+    margin-bottom: auto;
+}
+aside h1 {
+    color: black;
+    padding: 1rem;
+}
+aside p {
+    color: rgba(0, 0, 0, 0.719);
+    margin-bottom: auto;
+    padding: 1rem;
+}
+aside button {
+    background-color: rgb(226, 51, 51);
+    color: white;
+    width: 50%;
+    margin-top: auto;
+    font-size: 11px;
+    border-radius: 5px;
+    height: 4rem;
+    margin: 1rem;
+    transition: 0.5s;
+}
+aside button:hover {
+    width: 60%;
+    
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer {
+    margin-top: 8rem;
+    display: grid;
+    background-color: rgb(57, 57, 57);
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 3rem;
+
+
+}
+nav {
+    
+    text-align: center;
+}
+nav h1 {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 40px;
+}
+nav a {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.682);
+    text-decoration: none;
+    line-height: 8px;
+    
+}
+.helvetes-div {
+    flex-direction: column;
+    text-align: center;
+}
+.helvetes-div h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+.helvetes-div p {
+    color: rgba(255, 255, 255, 0.682);
+    font-size: 20px;
+}
+
+.en-satans-div {
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.en-satans-div .fa {
+    color: WHITE;
+    padding: 1rem;
+    font-size: 30px;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    
+    section {
+        grid-template-columns: repeat(1, 1fr);
+       align-items: center;
+    }
+    article {
+        align-items: center;
+    }
+    article p {
+        width: 50%;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    article img {
+
+        height: 50%; 
+        width: 50%;
+    }
+    figure {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        }
+    footer {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    nav {
+        margin-bottom: 3rem;
+    }
+    .helvetes-div {
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+
+/*
+
+
+
+
+footer {
+    margin-top: 10rem;
+    display: flex;
+    background-color: rgb(57, 57, 57);
+    justify-content: space-around;
+    height: 300px;
+    padding-top: 3rem;
+}
+nav {
+    
+    text-align: center;
+}
+nav h1 {
+    margin-bottom: 1rem;
+    color: white;
+    font-size: 40px;
+}
+nav a {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.682);
+    text-decoration: none;
+    line-height: 8px;
+    
+}
+.helvetes-div {
+    flex-direction: column;
+    text-align: center;
+}
+.helvetes-div h1 {
+    color: white;
+    margin-bottom: 1rem;
+}
+.helvetes-div p {
+    color: rgba(255, 255, 255, 0.682);
+    font-size: 20px;
+}
+
+.en-satans-div {
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.en-satans-div .fa {
+    color: WHITE;
+    padding: 1rem;
+    font-size: 30px;
+}
